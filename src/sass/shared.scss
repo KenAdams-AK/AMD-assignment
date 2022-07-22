@@ -1,0 +1,76 @@
+$color-white: #ffffff;
+$color-black-primary: #141414;
+$color-violet-primary: #8C30F5;
+$color-blue-primary: #0000FF;
+$color-blue-light: #ADD8E6;
+$color-grey: #777;
+$color-grey-light: #9597a1;
+$color-red-primary: #ee2126;
+$color-pink-primary: #FFEBEB;
+$color-blue-grey: #f9fbfe;
+
+$box-shadow-primary: 0px 4px 5px rgba(0, 0, 0, 0.14),
+	0px 1px 10px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.2);
+
+@mixin button-primary {
+	color: $color-white;
+	background: $color-violet-primary;
+	border: none;
+	border-radius: 16px;
+	padding: 24px;
+	font-size: 32px;
+	font-weight: 500;
+	cursor: pointer;
+	transition: transform 200ms ease-in-out;
+	box-shadow: $box-shadow-primary;
+
+	&:disabled {
+		background-color: $color-grey;
+	}
+
+	&:hover {
+		transform: scale(1.1);
+	}
+}
+
+@mixin button-secondary {
+	color: $color-white;
+	background: $color-blue-light;
+	border: none;
+	border-radius: 12px;
+	padding: 8px 20px;
+	font-size: 14px;
+	font-weight: 500;
+	cursor: pointer;
+	transition: transform 200ms ease-in-out;
+	box-shadow: $box-shadow-primary;
+
+	&:disabled {
+		background-color: $color-grey;
+	}
+
+	&:hover {
+		background: $color-blue-primary;
+	}
+}
+
+@mixin title {
+	font-size: 2rem;
+	font-weight: 500;
+	padding: 20px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+@mixin loader {
+	font-size: 1.2rem;
+	font-weight: 500;
+	padding: 16px;
+}
+
+@mixin error {
+	font-size: 1.2rem;
+	font-style: italic;
+	color: $color-red-primary;
+	padding: 16px;
+}

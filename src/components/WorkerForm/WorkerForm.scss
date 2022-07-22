@@ -1,0 +1,53 @@
+@import '../../sass/shared.scss';
+
+.WorkerForm {
+	&__loader{
+		@include loader;
+	}
+
+	&__error {
+		@include error;
+		font-size: .9rem;
+	}
+
+	&__form {
+		display: flex;
+		flex-direction: column;
+
+		&-field {
+			display: flex;
+			flex-direction: column;
+
+			input {
+				padding: 6px;
+				margin-bottom: 10px;
+				border-radius: 6px;
+				border: solid 1px $color-grey;
+			}
+		}
+
+	}
+
+	&__actions {
+		display: flex;
+		justify-content: flex-end;
+		margin-top: 12px;
+
+		&>* {
+			@include button-secondary;
+			margin-left: 12px;
+		}
+
+		&-cancel {
+			background-color: $color-blue-light;
+		}
+
+		&-save {
+			background-color: $color-blue-primary;
+
+			&:hover {
+				transform: scale(1.09);
+			}
+		}
+	}
+}

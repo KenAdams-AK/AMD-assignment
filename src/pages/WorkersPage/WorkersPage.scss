@@ -1,0 +1,12 @@
+@import '../../sass/shared.scss';
+
+.WorkersPage {
+	&__container {
+
+	}
+
+	&__title {
+		@include title;
+		font-size: 2rem;
+	}
+}

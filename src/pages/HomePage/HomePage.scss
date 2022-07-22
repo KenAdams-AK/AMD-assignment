@@ -1,0 +1,21 @@
+@import '../../sass/shared.scss';
+
+.HomePage {
+	&__container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		height: 100vh;
+		background: url('../../img/bg-section-1.jpg') no-repeat center;
+		background-size: cover;
+	}
+
+	&__title {
+		@include title;
+		margin-top: 8vh;
+	}
+
+	&__btn {
+		@include button-primary;
+	}
+}

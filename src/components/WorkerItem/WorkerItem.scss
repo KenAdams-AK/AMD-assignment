@@ -1,0 +1,31 @@
+@import '../../sass/shared.scss';
+
+.WorkerItem {
+	&__container {
+		width: fit-content;
+		border: solid 2px $color-black-primary;
+		border-radius: 16px;
+		overflow: hidden;
+		margin: 10px;
+		transition: transform 230ms ease-in-out;
+		box-shadow: $box-shadow-primary;
+
+		&:hover {
+			transform: scale(1.1);
+			cursor: pointer;
+		}
+	}
+
+	&__header {
+		font-size: 2rem;
+		background-color: $color-blue-light;
+		padding: 6px;
+	}
+
+	&__main {
+		color: $color-white;
+		background-color: $color-blue-primary;
+		text-align: center;
+		padding: 12px;
+	}
+}
